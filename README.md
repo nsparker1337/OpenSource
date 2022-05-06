@@ -1,1 +1,1 @@
-This is Repository is only used for CVE Referense
+This Repository is only used for CVE Referense
